@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>org.example.plugin2</id>
+    <name>plugin2</name>
+    <vendor email="951900584@qq.com" url="a.b.c">a.b.c</vendor>
+
+    <description><![CDATA[
+    gradle插件，aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <projectConfigurable groupId="tools" displayName="plugin2" id="plugin2" instance="com._2plugin2.factory.SettingFactory"></projectConfigurable>
+        <toolWindow factoryClass="com._2plugin2.factory.ReadFactory" id="readBook" anchor="right" secondary="true"></toolWindow>
+        
+        <toolWindow factoryClass="com._3stock.factory.TabFactory" id="stock" anchor="bottom" icon="/icon/stock.png"></toolWindow>
+        <applicationService serviceImplementation="com._3stock.infrastructure.DataSetting"></applicationService>
+        
+        <projectTemplatesFactory implementation="com._4scaffolding.factory.TemplateFactory"></projectTemplatesFactory>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="MyAction2" class="com._1plugin.MyAction2" text="MyAction2" description="MyAction2">
+            <add-to-group group-id="FileMenu" anchor="first"></add-to-group>
+        </action>
+    </actions>
+</idea-plugin>
