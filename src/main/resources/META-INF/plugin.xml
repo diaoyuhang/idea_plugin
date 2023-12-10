@@ -28,5 +28,10 @@
         <action id="MyAction2" class="com._1plugin.MyAction2" text="MyAction2" description="MyAction2">
             <add-to-group group-id="FileMenu" anchor="first"></add-to-group>
         </action>
+
+        <action id="CodeGenerateAction" class="com._5orm.action.CodeGenerateAction" text="CodeGenerateAction"
+                description="CodeGenerateAction">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"></add-to-group>
+        </action>
     </actions>
 </idea-plugin>
