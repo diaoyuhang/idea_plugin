@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>org.example.plugin2</id>
-    <name>plugin2</name>
+    <id>org.example.idea_plugin</id>
+    <name>idea_plugin</name>
     <vendor email="951900584@qq.com" url="a.b.c">a.b.c</vendor>
 
     <description><![CDATA[
@@ -20,6 +20,7 @@
         <applicationService serviceImplementation="com._3stock.infrastructure.DataSetting"></applicationService>
         
         <projectTemplatesFactory implementation="com._4scaffolding.factory.TemplateFactory"></projectTemplatesFactory>
+        <applicationService serviceImplementation="com._4scaffolding.infrastructure.DataSetting2"></applicationService>
     </extensions>
 
     <actions>

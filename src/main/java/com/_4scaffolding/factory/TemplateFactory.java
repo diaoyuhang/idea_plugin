@@ -1,6 +1,7 @@
 package com._4scaffolding.factory;
 
 import com._4scaffolding.infrastructure.ICONS;
+import com._4scaffolding.module.DDDModuleBuilder;
 import com.intellij.ide.util.projectWizard.WizardContext;
 import com.intellij.openapi.project.Project;
 import com.intellij.platform.ProjectTemplate;
@@ -28,6 +29,6 @@ public class TemplateFactory extends ProjectTemplatesFactory {
     @Override
     public ProjectTemplate @NotNull [] createTemplates(@Nullable String group, @NotNull WizardContext context) {
         project = context.getProject();
-        return new ProjectTemplate[]{new BuilderBasedTemplate(null)};
+        return new ProjectTemplate[]{new BuilderBasedTemplate(new DDDModuleBuilder())};
     }
 }
