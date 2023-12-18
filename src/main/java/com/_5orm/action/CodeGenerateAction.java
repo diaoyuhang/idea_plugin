@@ -14,6 +14,6 @@ public class CodeGenerateAction extends AnAction {
 
 //        Project project = e.getProject();
         Project project = e.getRequiredData(CommonDataKeys.PROJECT);
-        ShowSettingsUtil.getInstance().editConfigurable(project,new ORMSettingsUI());
+        ShowSettingsUtil.getInstance().editConfigurable(project,new ORMSettingsUI(project));
     }
 }

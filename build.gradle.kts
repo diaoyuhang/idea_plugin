@@ -14,6 +14,7 @@ repositories {
 dependencies {
     implementation("com.alibaba:fastjson:1.2.78")
     implementation("cn.hutool:hutool-all:5.7.16")
+    implementation("mysql:mysql-connector-java:8.0.28")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
     implementation("org.freemarker:freemarker:2.3.28")

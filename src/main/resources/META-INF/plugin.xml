@@ -21,6 +21,8 @@
         
         <projectTemplatesFactory implementation="com._4scaffolding.factory.TemplateFactory"></projectTemplatesFactory>
         <applicationService serviceImplementation="com._4scaffolding.infrastructure.DataSetting2"></applicationService>
+
+        <applicationService serviceImplementation="com._5orm.infrastructure.data.DataSetting3"></applicationService>
     </extensions>
 
     <actions>
@@ -30,7 +32,7 @@
         </action>
 
         <action id="CodeGenerateAction" class="com._5orm.action.CodeGenerateAction" text="CodeGenerateAction"
-                description="CodeGenerateAction">
+                description="CodeGenerateAction" icon="/icon/logo.png">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"></add-to-group>
         </action>
     </actions>
