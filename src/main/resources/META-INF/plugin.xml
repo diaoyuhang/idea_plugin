@@ -10,6 +10,9 @@
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends></depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
@@ -34,6 +37,10 @@
         <action id="CodeGenerateAction" class="com._5orm.action.CodeGenerateAction" text="CodeGenerateAction"
                 description="CodeGenerateAction" icon="/icon/logo.png">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"></add-to-group>
+        </action>
+        <action id="Vo2DtoGenerateAction" class="com._6vo2dto.action.Vo2DtoGenerateAction" text="Vo2DtoGenerateAction"
+                description="Vo2DtoGenerateAction" icon="/icon/logo.svg">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
         </action>
     </actions>
 </idea-plugin>
